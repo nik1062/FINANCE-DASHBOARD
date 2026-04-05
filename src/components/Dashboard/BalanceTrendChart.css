@@ -1,0 +1,41 @@
+/* ─── Trend Chart ────────────────────────────────────────────────────────────── */
+.trend-chart__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.trend-chart__title { font-size: 15px; font-weight: 500; color: var(--text1); }
+.trend-chart__sub   { font-size: 12px; color: var(--text3); margin-top: 2px; }
+
+/* ─── Legend ─────────────────────────────────────────────────────────────────── */
+.trend-chart__legend {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--text3);
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend-dash {
+  width: 16px;
+  height: 0;
+  border-top: 2px dashed;
+  flex-shrink: 0;
+}

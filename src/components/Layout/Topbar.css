@@ -1,0 +1,127 @@
+/* ─── Topbar Container ───────────────────────────────────────────────────────── */
+.topbar {
+  background: var(--bg1);
+  border-bottom: 1px solid var(--border);
+  padding: 0.875rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* ─── Search ─────────────────────────────────────────────────────────────────── */
+.topbar__search-wrap {
+  flex: 1;
+  max-width: 380px;
+  position: relative;
+}
+
+.topbar__search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.topbar__search {
+  width: 100%;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px 8px 34px;
+  color: var(--text1);
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.topbar__search::placeholder { color: var(--text3); }
+.topbar__search:focus { border-color: var(--border2); }
+
+/* ─── Spacer ─────────────────────────────────────────────────────────────────── */
+.topbar__spacer { flex: 1; }
+
+/* ─── Role Switcher ──────────────────────────────────────────────────────────── */
+.topbar__role-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid var(--border2);
+  background: var(--bg2);
+  color: var(--text1);
+}
+
+.topbar__role-wrap.admin  { border-color: #6366f140; background: #1e1e3a; color: var(--blue-text); }
+.topbar__role-wrap.viewer { border-color: #a855f740; background: #2a1a3a; color: var(--purple-text); }
+
+.topbar__role-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  flex-shrink: 0;
+}
+
+.topbar__role-prefix {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.topbar__role-select {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+}
+
+/* ─── Icon Button ────────────────────────────────────────────────────────────── */
+.topbar__icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+
+.topbar__icon-btn:hover { background: var(--bg3); }
+
+/* ─── Avatar ─────────────────────────────────────────────────────────────────── */
+.topbar__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  flex-shrink: 0;
+  cursor: default;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .topbar { padding: 0.75rem 1rem; }
+  .topbar__search-wrap { max-width: 200px; }
+  .topbar__role-prefix { display: none; }
+}

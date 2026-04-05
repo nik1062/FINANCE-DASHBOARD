@@ -1,0 +1,12 @@
+/* ─── Transactions Page ──────────────────────────────────────────────────────── */
+.transactions__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+  gap: 1rem;
+}
+
+@media (max-width: 500px) {
+  .transactions__header { flex-direction: column; }
+}

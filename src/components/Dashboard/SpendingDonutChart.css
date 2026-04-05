@@ -1,0 +1,29 @@
+/* ─── Donut Chart ────────────────────────────────────────────────────────────── */
+.donut-chart__header  { margin-bottom: 0.5rem; }
+.donut-chart__title   { font-size: 15px; font-weight: 500; color: var(--text1); }
+.donut-chart__sub     { font-size: 12px; color: var(--text3); margin-top: 2px; }
+
+/* ─── Category Legend ────────────────────────────────────────────────────────── */
+.donut-chart__legend { margin-top: 8px; }
+
+.donut-chart__legend-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 13px;
+  border-bottom: 1px solid var(--border);
+}
+
+.donut-chart__legend-row:last-child { border-bottom: none; }
+
+.donut-chart__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.donut-chart__cat-name  { flex: 1; color: var(--text2); }
+.donut-chart__cat-value { color: var(--text1); font-variant-numeric: tabular-nums; }
+.donut-chart__cat-pct   { color: var(--text3); min-width: 34px; text-align: right; }

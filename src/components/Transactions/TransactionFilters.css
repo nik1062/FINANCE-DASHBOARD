@@ -1,0 +1,57 @@
+/* ─── Filters Row ────────────────────────────────────────────────────────────── */
+.txn-filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.txn-filters__search {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+/* ─── Pills ──────────────────────────────────────────────────────────────────── */
+.txn-filters__pills {
+  display: flex;
+  gap: 6px;
+}
+
+.txn-filters__pill {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text2);
+  font-family: inherit;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.txn-filters__pill:hover:not(.active) {
+  background: var(--bg3);
+  color: var(--text1);
+}
+
+.txn-filters__pill.active {
+  background: var(--blue-dim);
+  border-color: #6366f180;
+  color: var(--blue-text);
+}
+
+/* ─── Count ──────────────────────────────────────────────────────────────────── */
+.txn-filters__count {
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--text3);
+  white-space: nowrap;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .txn-filters__search { width: 100%; }
+  .txn-filters__count  { display: none; }
+}

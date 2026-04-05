@@ -1,0 +1,27 @@
+/* ─── Category Breakdown ─────────────────────────────────────────────────────── */
+.cat-breakdown__header { margin-bottom: 1.25rem; }
+.cat-breakdown__title  { font-size: 15px; font-weight: 500; color: var(--text1); }
+.cat-breakdown__sub    { font-size: 12px; color: var(--text3); margin-top: 2px; }
+
+.cat-breakdown__item {
+  margin-bottom: 14px;
+}
+.cat-breakdown__item:last-child { margin-bottom: 0; }
+
+.cat-breakdown__row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.cat-breakdown__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.cat-breakdown__name  { flex: 1; color: var(--text1); }
+.cat-breakdown__value { color: var(--text2); font-variant-numeric: tabular-nums; }

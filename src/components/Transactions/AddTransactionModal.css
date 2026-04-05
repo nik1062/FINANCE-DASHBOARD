@@ -1,0 +1,10 @@
+/* ─── Error Message ──────────────────────────────────────────────────────────── */
+.add-modal__error {
+  font-size: 13px;
+  color: var(--red-text);
+  background: var(--red-dim);
+  border: 1px solid #4a2020;
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  margin-top: 0.5rem;
+}
